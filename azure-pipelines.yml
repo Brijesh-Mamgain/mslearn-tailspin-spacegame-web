@@ -4,7 +4,7 @@ pool:
 steps:
   - task: DotNetCoreCLI@2
     inputs:
-      azureSubscription: 'd4809a90-c3d8-4efc-8669-78446e10582c'
+      azureSubscription: 'tailspinsvcconnection2025'
       command: 'build'
 
   - bash: echo hello world
