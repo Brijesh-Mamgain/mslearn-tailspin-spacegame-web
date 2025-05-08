@@ -11,7 +11,7 @@ steps:
 
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: 'd4809a90-c3d8-4efc-8669-78446e10582c'
+      azureSubscription: 'tailspinsvcconnection2025'
       appType: 'webApp'
       appName: 'hmtailspin'
       package: '$(System.DefaultWorkingDirectory)/**/*.zip'
