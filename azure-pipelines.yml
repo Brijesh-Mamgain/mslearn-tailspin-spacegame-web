@@ -4,7 +4,14 @@ pool:
 steps:
   - task: DotNetCoreCLI@2
     inputs:
-      azureSubscription: 'Azure subscription 1(5b0205a4-df34-499c-b199-f5bc0d9dce8c)'
+      azureSubscription: 'd4809a90-c3d8-4efc-8669-78446e10582c'
       command: 'build'
 
   - bash: echo hello world
+
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: 'd4809a90-c3d8-4efc-8669-78446e10582c'
+      appType: 'webApp'
+      appName: 'hmtailspin'
+      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
