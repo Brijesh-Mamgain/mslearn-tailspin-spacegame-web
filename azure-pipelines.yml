@@ -20,8 +20,8 @@ steps:
     verbose: false
     workingDir: 'Tailspin.SpaceGame.Web' # Specify the directory containing package.json
 
-- script: 'npx sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
-  displayName: 'Compile Sass assets'
+# - script: 'npx sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+  # displayName: 'Compile Sass assets'
 
 - task: gulp@1
   displayName: 'Run gulp tasks'
